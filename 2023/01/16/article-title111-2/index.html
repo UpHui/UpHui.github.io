@@ -16,13 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
+    <meta name="description" content="version: ‘3’services:  lskypro:    image: halcyonazure&#x2F;lsky-pro-docker:latest    restart: unless-stopped    hostname: lskypro    container_name: lskypro    volumes:      - &#x2F;docker&#x2F;lsky&#x2F;web:&#x2F;var&#x2F;www&#x2F;ht">
+<meta property="og:type" content="article">
 <meta property="og:title" content="article title111">
 <meta property="og:url" content="http://example.com/2023/01/16/article-title111-2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="version: ‘3’services:  lskypro:    image: halcyonazure&#x2F;lsky-pro-docker:latest    restart: unless-stopped    hostname: lskypro    container_name: lskypro    volumes:      - &#x2F;docker&#x2F;lsky&#x2F;web:&#x2F;var&#x2F;www&#x2F;ht">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-16T09:15:29.000Z">
-<meta property="article:modified_time" content="2023-01-16T09:15:29.749Z">
+<meta property="article:modified_time" content="2023-01-20T10:59:03.583Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -217,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          642 字
         
       </span>
     
@@ -228,7 +230,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -271,7 +273,10 @@
             
               <div class="markdown-body">
                 
-                
+                <p>version: ‘3’<br>services:<br>  lskypro:<br>    image: halcyonazure/lsky-pro-docker:latest<br>    restart: unless-stopped<br>    hostname: lskypro<br>    container_name: lskypro<br>    volumes:<br>      - /docker/lsky/web:/var/www/html/<br>    ports:<br>      - “7080:80”<br>    networks:<br>      - lsky-net</p>
+<p>  mysql-lsky:<br>    image: mysql:5.7.22<br>    restart: unless-stopped<br>    # 主机名，可作为”数据库连接地址”<br>    hostname: mysql-lsky<br>    # 容器名称<br>    container_name: mysql-lsky<br>    # 修改加密规则<br>    command: –default-authentication-plugin=mysql_native_password<br>    volumes:<br>      - /data/lsky/mysql/data:/var/lib/mysql<br>      - /data/lsky/mysql/conf:/etc/mysql<br>      - /data/lsky/mysql/log:/var/log/mysql<br>    environment:<br>      MYSQL_ROOT_PASSWORD: lAsWjb6rzSzENUYg # 数据库root用户密码，自行修改<br>      MYSQL_DATABASE: lsky-data # 可作为”数据库名称/路径”<br>    networks:<br>      - lsky-net</p>
+<p>networks:<br>  lsky-net: {}</p>
+
                 
               </div>
             
