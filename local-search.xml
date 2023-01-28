@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>test</title>
+    <link href="/2023/01/28/test/"/>
+    <url>/2023/01/28/test/</url>
+    
+    <content type="html"><![CDATA[<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs C#">Public <span class="hljs-keyword">static</span> <span class="hljs-number">123</span>;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>未分类</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>None</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>article title111</title>
     <link href="/2023/01/16/article-title111-2/"/>
     <url>/2023/01/16/article-title111-2/</url>
@@ -11,6 +36,20 @@
     <content type="html"><![CDATA[<p>version: ‘3’<br>services:<br>  lskypro:<br>    image: halcyonazure/lsky-pro-docker:latest<br>    restart: unless-stopped<br>    hostname: lskypro<br>    container_name: lskypro<br>    volumes:<br>      - /docker/lsky/web:/var/www/html/<br>    ports:<br>      - “7080:80”<br>    networks:<br>      - lsky-net</p><p>  mysql-lsky:<br>    image: mysql:5.7.22<br>    restart: unless-stopped<br>    # 主机名，可作为”数据库连接地址”<br>    hostname: mysql-lsky<br>    # 容器名称<br>    container_name: mysql-lsky<br>    # 修改加密规则<br>    command: –default-authentication-plugin=mysql_native_password<br>    volumes:<br>      - /data/lsky/mysql/data:/var/lib/mysql<br>      - /data/lsky/mysql/conf:/etc/mysql<br>      - /data/lsky/mysql/log:/var/log/mysql<br>    environment:<br>      MYSQL_ROOT_PASSWORD: lAsWjb6rzSzENUYg # 数据库root用户密码，自行修改<br>      MYSQL_DATABASE: lsky-data # 可作为”数据库名称/路径”<br>    networks:<br>      - lsky-net</p><p>networks:<br>  lsky-net: {}</p>]]></content>
     
     
+    <categories>
+      
+      <category>Diary</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>PS3</tag>
+      
+      <tag>Games</tag>
+      
+    </tags>
     
   </entry>
   
